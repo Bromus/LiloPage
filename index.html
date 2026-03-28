@@ -3,143 +3,120 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1e5c4a">
-  <title>Lilo’s 11th birthday — jungle party</title>
+  <meta name="theme-color" content="#0d0612">
+  <title>Lilo’s 11th — haunted birthday</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;600;700;800&family=Titan+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="jungle-scene" aria-hidden="true">
-    <div class="jungle-scene__bg"></div>
-    <div class="jungle-scene__shade"></div>
-    <div class="wildlife">
-      <figure class="wildlife__frame wildlife__frame--macaw">
-        <img
-          src="https://images.unsplash.com/photo-1552728081-9767a877ceaf?auto=format&fit=crop&w=640&q=80"
-          srcset="https://images.unsplash.com/photo-1552728081-9767a877ceaf?auto=format&fit=crop&w=480&q=80 480w,
-                  https://images.unsplash.com/photo-1552728081-9767a877ceaf?auto=format&fit=crop&w=640&q=80 640w"
-          sizes="(max-width: 600px) 120px, 180px"
-          width="320"
-          height="400"
-          alt=""
-          loading="lazy"
-          decoding="async">
-      </figure>
-      <figure class="wildlife__frame wildlife__frame--monkey">
-        <img
-          src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=640&q=80"
-          srcset="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=480&q=80 480w,
-                  https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=640&q=80 640w"
-          sizes="(max-width: 600px) 120px, 180px"
-          width="320"
-          height="400"
-          alt=""
-          loading="lazy"
-          decoding="async">
-      </figure>
-      <figure class="wildlife__frame wildlife__frame--tiger">
-        <img
-          src="https://images.unsplash.com/photo-1561731216-c3a4b994fd02?auto=format&fit=crop&w=640&q=80"
-          srcset="https://images.unsplash.com/photo-1561731216-c3a4b994fd02?auto=format&fit=crop&w=480&q=80 480w,
-                  https://images.unsplash.com/photo-1561731216-c3a4b994fd02?auto=format&fit=crop&w=640&q=80 640w"
-          sizes="(max-width: 600px) 120px, 180px"
-          width="320"
-          height="400"
-          alt=""
-          loading="lazy"
-          decoding="async">
-      </figure>
-      <figure class="wildlife__frame wildlife__frame--frog">
-        <img
-          src="https://images.unsplash.com/photo-1559251606-c72583351e2e?auto=format&fit=crop&w=640&q=80"
-          srcset="https://images.unsplash.com/photo-1559251606-c72583351e2e?auto=format&fit=crop&w=480&q=80 480w,
-                  https://images.unsplash.com/photo-1559251606-c72583351e2e?auto=format&fit=crop&w=640&q=80 640w"
-          sizes="(max-width: 600px) 120px, 180px"
-          width="320"
-          height="400"
-          alt=""
-          loading="lazy"
-          decoding="async">
-      </figure>
+  <div class="haunt" aria-hidden="true">
+    <div class="haunt__vignette"></div>
+    <div class="haunt__stars"></div>
+    <div class="haunt__moon"></div>
+    <div class="haunt__fog haunt__fog--1"></div>
+    <div class="haunt__fog haunt__fog--2"></div>
+    <div class="haunt__fog haunt__fog--3"></div>
+
+    <div class="haunt__eyes">
+      <span class="haunt__eye-pair haunt__eye-pair--a"></span>
+      <span class="haunt__eye-pair haunt__eye-pair--b"></span>
+      <span class="haunt__eye-pair haunt__eye-pair--c"></span>
+    </div>
+
+    <div class="haunt__ghosts">
+      <svg class="ghost ghost--1" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="rgba(232,240,255,0.16)" d="M50 10 C28 10 12 28 12 50 L12 100 Q20 114 28 100 Q36 114 44 100 Q50 114 56 100 Q64 114 72 100 Q80 114 88 100 L88 50 C88 28 72 10 50 10Z"/>
+        <ellipse cx="36" cy="48" rx="7" ry="9" fill="#0d0612"/>
+        <ellipse cx="64" cy="48" rx="7" ry="9" fill="#0d0612"/>
+      </svg>
+      <svg class="ghost ghost--2" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="rgba(180,255,210,0.11)" d="M50 14 C32 14 18 30 18 48 L18 98 Q26 110 34 98 Q42 110 50 98 Q58 110 66 98 Q74 110 82 98 L82 48 C82 30 68 14 50 14Z"/>
+        <ellipse cx="38" cy="46" rx="6" ry="8" fill="#0d0612"/>
+        <ellipse cx="62" cy="46" rx="6" ry="8" fill="#0d0612"/>
+      </svg>
+      <svg class="ghost ghost--3" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="rgba(255,200,255,0.12)" d="M50 8 C26 8 8 28 8 52 L8 102 Q16 116 24 102 Q32 116 40 102 Q50 116 60 102 Q68 116 76 102 Q84 116 92 102 L92 52 C92 28 74 8 50 8Z"/>
+        <ellipse cx="36" cy="50" rx="7" ry="9" fill="#0d0612"/>
+        <ellipse cx="64" cy="50" rx="7" ry="9" fill="#0d0612"/>
+      </svg>
     </div>
   </div>
 
   <main class="wrap">
     <article class="card" id="invite-card">
       <div class="card__ribbon" aria-hidden="true">
-        <span class="card__ribbon-text">Official invite</span>
+        <span class="card__ribbon-text">Summoned guests only</span>
       </div>
 
       <header class="card__head">
-        <p class="eyebrow"><span class="eyebrow__spark" aria-hidden="true"></span> Top secret — birthday intel</p>
-        <h1 class="title">
+        <p class="eyebrow"><span class="eyebrow__glyph" aria-hidden="true">☾</span> The veil is thin tonight…</p>
+        <h1 class="title title--glitch">
           <span class="title__line title__line--name">Lilo</span>
           <span class="title__line title__line--turns">turns</span>
           <span class="title__age-wrap">
             <span class="age" aria-label="11">11</span>
           </span>
         </h1>
-        <p class="theme-line">Jungle mission: cake, music &amp; slightly wild behaviour encouraged.</p>
+        <p class="theme-line">Haunted birthday bash — beats, snacks &amp; things that go bump (it’s just the subwoofer… probably).</p>
       </header>
 
-      <svg class="wave-divider" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true">
-        <path fill="currentColor" d="M0 12 Q50 0 100 12 T200 12 T300 12 T400 12 V24 H0Z"/>
+      <svg class="jagged-divider" viewBox="0 0 400 14" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="currentColor" d="M0 8 L12 2 L24 10 L40 0 L52 12 L68 3 L84 11 L100 1 L116 9 L132 2 L148 10 L164 4 L180 11 L196 1 L212 8 L228 3 L244 12 L260 5 L276 10 L292 2 L308 9 L324 4 L340 11 L356 6 L372 10 L388 3 L400 8 V14 H0Z"/>
       </svg>
 
       <p class="greeting">
         <span class="greeting__line1">
-          <span class="greeting__hey">Hey,</span>
+          <span class="greeting__hey">Psst…</span>
           <span class="guest-name" id="guest-name">friend</span>
         </span>
-        <span class="greeting__bang">You’re officially invited!</span>
+        <span class="greeting__bang">Your invitation materialized.</span>
       </p>
       <p class="lead">
-        Bring your best explorer energy — we’re talking games with volume, snacks with crunch, and a dance floor that might pretend it’s quicksand (it’s not).
+        Dress code: spooky-cool. Expect fog-machine drama, a playlist from the beyond, and birthday cake that absolutely will stare back if you’re not nice to it.
       </p>
 
       <section class="details" aria-label="Party details">
-        <div class="details__label">Field notes</div>
+        <div class="details__label">Classified</div>
         <h2 class="details__h">When &amp; where</h2>
         <ul class="details__list">
-          <li><span class="details__icon" aria-hidden="true">◆</span><span><strong>Date</strong> — <span class="placeholder">Add your date here</span></span></li>
-          <li><span class="details__icon" aria-hidden="true">◆</span><span><strong>Time</strong> — <span class="placeholder">Add time</span></span></li>
-          <li><span class="details__icon" aria-hidden="true">◆</span><span><strong>HQ</strong> — <span class="placeholder">Add address or instructions</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Date</strong> — <span class="placeholder">Add your date here</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Witching hour</strong> — <span class="placeholder">Add time</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Haunt</strong> — <span class="placeholder">Add address or instructions</span></span></li>
         </ul>
       </section>
 
       <section class="rsvp" id="rsvp-pending" aria-labelledby="rsvp-heading">
         <p class="rsvp__tag">RSVP</p>
-        <h2 class="rsvp__h" id="rsvp-heading">Are you rolling in?</h2>
-        <p class="rsvp__hint">One confident tap = you’re on the adventure roster. (Spreadsheet magic comes later.)</p>
+        <h2 class="rsvp__h" id="rsvp-heading">Cross over?</h2>
+        <p class="rsvp__hint">Tap to pledge your presence. (The guest list wakes up later — for now it’s pure vibes.)</p>
         <button type="button" class="btn btn--accept" id="accept-btn">
-          <span class="btn__text">Count me in!</span>
-          <span class="btn__shine" aria-hidden="true"></span>
+          <span class="btn__text">I’m haunting the party</span>
+          <span class="btn__glow" aria-hidden="true"></span>
         </button>
       </section>
 
       <section class="rsvp rsvp--done" id="rsvp-done" hidden>
         <div class="celebrate" aria-hidden="true">
-          <img
-            class="celebrate__leaves"
-            src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=720&q=75"
-            alt=""
-            width="360"
-            height="120"
-            loading="lazy"
-            decoding="async">
+          <svg class="celebrate__svg" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="4" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <text x="160" y="58" text-anchor="middle" class="celebrate__boo" filter="url(#glow)">BOO!</text>
+            <path fill="rgba(168,85,255,0.35)" d="M40 75 Q80 55 120 75 T200 75 T280 75 L320 100 H0Z"/>
+          </svg>
         </div>
-        <p class="rsvp__tag rsvp__tag--yes">Confirmed</p>
-        <h2 class="rsvp__h">Pack your binoculars!</h2>
+        <p class="rsvp__tag rsvp__tag--yes">Sealed</p>
+        <h2 class="rsvp__h">You’re in the circle.</h2>
         <p class="rsvp__thanks">
-          Legendary move, <span class="guest-name" id="thanks-name">friend</span> — you’re marked <strong>IN</strong> for team birthday.
+          Nice one, <span class="guest-name" id="thanks-name">friend</span> — you’re marked <strong>PRESENT</strong> on the other side.
         </p>
       </section>
     </article>
-
-    <p class="photo-credit">Wildlife photos: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
   </main>
 
   <script src="invite.js"></script>

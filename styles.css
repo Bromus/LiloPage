@@ -40,10 +40,11 @@ body {
   position: absolute;
   inset: 0;
   background-color: #0f2418;
-  background-image: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2400&q=85");
+  background-image: url("images/jungle-wallpaper.webp");
   background-size: cover;
-  background-position: center 35%;
-  transform: scale(1.03);
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: scale(1.02);
 }
 
 .jungle-scene__shade {
@@ -130,7 +131,7 @@ body {
   }
 
   .jungle-scene__bg {
-    background-position: center 40%;
+    background-position: center 42%;
   }
 }
 

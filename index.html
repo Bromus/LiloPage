@@ -45,13 +45,12 @@
   </div>
 
   <main class="wrap">
-    <article class="card" id="invite-card">
-      <div class="card__ribbon" aria-hidden="true">
-        <span class="card__ribbon-text">Summoned guests only</span>
-      </div>
-
-      <header class="card__head">
-        <p class="eyebrow"><span class="eyebrow__glyph" aria-hidden="true">☾</span> The veil is thin tonight…</p>
+    <article class="invite" id="invite-card">
+      <header class="invite__head">
+        <p class="eyebrow">
+          <span class="eyebrow__summon">Summoned guests only</span>
+          <span class="eyebrow__row"><span class="eyebrow__glyph" aria-hidden="true">☾</span> The veil is thin tonight…</span>
+        </p>
         <h1 class="title title--glitch">
           <span class="title__line title__line--name">Lilo</span>
           <span class="title__line title__line--turns">turns</span>
@@ -62,9 +61,7 @@
         <p class="theme-line">Haunted birthday bash — beats, snacks &amp; things that go bump (it’s just the subwoofer… probably).</p>
       </header>
 
-      <svg class="jagged-divider" viewBox="0 0 400 14" preserveAspectRatio="none" aria-hidden="true">
-        <path fill="currentColor" d="M0 8 L12 2 L24 10 L40 0 L52 12 L68 3 L84 11 L100 1 L116 9 L132 2 L148 10 L164 4 L180 11 L196 1 L212 8 L228 3 L244 12 L260 5 L276 10 L292 2 L308 9 L324 4 L340 11 L356 6 L372 10 L388 3 L400 8 V14 H0Z"/>
-      </svg>
+      <p class="air-dots" aria-hidden="true">· · ·</p>
 
       <p class="greeting">
         <span class="greeting__line1">
@@ -78,8 +75,7 @@
       </p>
 
       <section class="details" aria-label="Party details">
-        <div class="details__label">Classified</div>
-        <h2 class="details__h">When &amp; where</h2>
+        <h2 class="details__h"><span class="details__label">Classified</span> When &amp; where</h2>
         <ul class="details__list">
           <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Date</strong> — <span class="placeholder">Add your date here</span></span></li>
           <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Witching hour</strong> — <span class="placeholder">Add time</span></span></li>
@@ -98,7 +94,7 @@
       </section>
 
       <section class="rsvp rsvp--done" id="rsvp-done" hidden>
-        <div class="celebrate" aria-hidden="true">
+        <div class="celebrate celebrate--air" aria-hidden="true">
           <svg class="celebrate__svg" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">

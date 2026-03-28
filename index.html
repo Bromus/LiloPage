@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#142920">
+  <meta name="theme-color" content="#1e5c4a">
   <title>Lilo’s 11th birthday — jungle party</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;600;700;800&family=Titan+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -69,32 +69,55 @@
 
   <main class="wrap">
     <article class="card" id="invite-card">
+      <div class="card__ribbon" aria-hidden="true">
+        <span class="card__ribbon-text">Official invite</span>
+      </div>
+
       <header class="card__head">
-        <p class="eyebrow">You’re invited</p>
-        <h1 class="title">Lilo turns <span class="age">11</span></h1>
-        <p class="theme-line">A jungle adventure party</p>
+        <p class="eyebrow"><span class="eyebrow__spark" aria-hidden="true"></span> Top secret — birthday intel</p>
+        <h1 class="title">
+          <span class="title__line title__line--name">Lilo</span>
+          <span class="title__line title__line--turns">turns</span>
+          <span class="title__age-wrap">
+            <span class="age" aria-label="11">11</span>
+          </span>
+        </h1>
+        <p class="theme-line">Jungle mission: cake, music &amp; slightly wild behaviour encouraged.</p>
       </header>
 
+      <svg class="wave-divider" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="currentColor" d="M0 12 Q50 0 100 12 T200 12 T300 12 T400 12 V24 H0Z"/>
+      </svg>
+
       <p class="greeting">
-        Hi <span class="guest-name" id="guest-name">friend</span>!
+        <span class="greeting__line1">
+          <span class="greeting__hey">Hey,</span>
+          <span class="guest-name" id="guest-name">friend</span>
+        </span>
+        <span class="greeting__bang">You’re officially invited!</span>
       </p>
       <p class="lead">
-        We’d love for you to celebrate with us — wild games, music, and plenty of jungle fun.
+        Bring your best explorer energy — we’re talking games with volume, snacks with crunch, and a dance floor that might pretend it’s quicksand (it’s not).
       </p>
 
       <section class="details" aria-label="Party details">
+        <div class="details__label">Field notes</div>
         <h2 class="details__h">When &amp; where</h2>
         <ul class="details__list">
-          <li><strong>Date</strong> — <span class="placeholder">Add your date here</span></li>
-          <li><strong>Time</strong> — <span class="placeholder">Add time</span></li>
-          <li><strong>Place</strong> — <span class="placeholder">Add address or instructions</span></li>
+          <li><span class="details__icon" aria-hidden="true">◆</span><span><strong>Date</strong> — <span class="placeholder">Add your date here</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">◆</span><span><strong>Time</strong> — <span class="placeholder">Add time</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">◆</span><span><strong>HQ</strong> — <span class="placeholder">Add address or instructions</span></span></li>
         </ul>
       </section>
 
       <section class="rsvp" id="rsvp-pending" aria-labelledby="rsvp-heading">
-        <h2 class="rsvp__h" id="rsvp-heading">Will you come?</h2>
-        <p class="rsvp__hint">Tap below to accept this invite. (We’ll connect this to our guest list soon.)</p>
-        <button type="button" class="btn btn--accept" id="accept-btn">Yes — I’m coming!</button>
+        <p class="rsvp__tag">RSVP</p>
+        <h2 class="rsvp__h" id="rsvp-heading">Are you rolling in?</h2>
+        <p class="rsvp__hint">One confident tap = you’re on the adventure roster. (Spreadsheet magic comes later.)</p>
+        <button type="button" class="btn btn--accept" id="accept-btn">
+          <span class="btn__text">Count me in!</span>
+          <span class="btn__shine" aria-hidden="true"></span>
+        </button>
       </section>
 
       <section class="rsvp rsvp--done" id="rsvp-done" hidden>
@@ -108,9 +131,10 @@
             loading="lazy"
             decoding="async">
         </div>
-        <h2 class="rsvp__h">See you in the jungle!</h2>
+        <p class="rsvp__tag rsvp__tag--yes">Confirmed</p>
+        <h2 class="rsvp__h">Pack your binoculars!</h2>
         <p class="rsvp__thanks">
-          Thanks, <span class="guest-name" id="thanks-name">friend</span> — we’ve noted you as <strong>attending</strong>.
+          Legendary move, <span class="guest-name" id="thanks-name">friend</span> — you’re marked <strong>IN</strong> for team birthday.
         </p>
       </section>
     </article>

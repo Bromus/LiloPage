@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0d0612">
-  <title>Lilo’s 11th — haunted birthday</title>
+  <title>Lilo fyller 11 — spökfest</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -47,48 +47,41 @@
   <main class="wrap">
     <article class="invite" id="invite-card">
       <header class="invite__head">
-        <p class="eyebrow">
-          <span class="eyebrow__summon">Summoned guests only</span>
-          <span class="eyebrow__row"><span class="eyebrow__glyph" aria-hidden="true">☾</span> The veil is thin tonight…</span>
+        <p class="eyebrow eyebrow--single">
+          <span class="eyebrow__glyph" aria-hidden="true">☾</span> Spökfest · bara inbjudna
         </p>
         <h1 class="title title--glitch">
           <span class="title__line title__line--name">Lilo</span>
-          <span class="title__line title__line--turns">turns</span>
+          <span class="title__line title__line--turns">fyller</span>
           <span class="title__age-wrap">
-            <span class="age" aria-label="11">11</span>
+            <span class="age" aria-label="11 år">11</span>
           </span>
         </h1>
-        <p class="theme-line">Haunted birthday bash — beats, snacks &amp; things that go bump (it’s just the subwoofer… probably).</p>
       </header>
 
       <p class="air-dots" aria-hidden="true">· · ·</p>
 
       <p class="greeting">
         <span class="greeting__line1">
-          <span class="greeting__hey">Psst…</span>
-          <span class="guest-name" id="guest-name">friend</span>
+          <span class="greeting__hey">Hej</span>
+          <span class="guest-name" id="guest-name">kompis</span><span class="greeting__comma">!</span>
         </span>
-        <span class="greeting__bang">Your invitation materialized.</span>
-      </p>
-      <p class="lead">
-        Dress code: spooky-cool. Expect fog-machine drama, a playlist from the beyond, and birthday cake that absolutely will stare back if you’re not nice to it.
       </p>
 
-      <section class="details" aria-label="Party details">
-        <h2 class="details__h"><span class="details__label">Classified</span> When &amp; where</h2>
+      <section class="details" aria-label="Tid och plats">
+        <h2 class="details__h">Var &amp; när</h2>
         <ul class="details__list">
-          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Date</strong> — <span class="placeholder">Add your date here</span></span></li>
-          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Witching hour</strong> — <span class="placeholder">Add time</span></span></li>
-          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Haunt</strong> — <span class="placeholder">Add address or instructions</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Datum</strong> — <span class="placeholder">…</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Tid</strong> — <span class="placeholder">…</span></span></li>
+          <li><span class="details__icon" aria-hidden="true">✦</span><span><strong>Plats</strong> — <span class="placeholder">…</span></span></li>
         </ul>
       </section>
 
       <section class="rsvp" id="rsvp-pending" aria-labelledby="rsvp-heading">
-        <p class="rsvp__tag">RSVP</p>
-        <h2 class="rsvp__h" id="rsvp-heading">Cross over?</h2>
-        <p class="rsvp__hint">Tap to pledge your presence. (The guest list wakes up later — for now it’s pure vibes.)</p>
+        <p class="rsvp__tag">OSA</p>
+        <h2 class="rsvp__h" id="rsvp-heading">Kommer du?</h2>
         <button type="button" class="btn btn--accept" id="accept-btn">
-          <span class="btn__text">I’m haunting the party</span>
+          <span class="btn__text">Jag kommer</span>
           <span class="btn__glow" aria-hidden="true"></span>
         </button>
       </section>
@@ -102,14 +95,14 @@
                 <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
               </filter>
             </defs>
-            <text x="160" y="58" text-anchor="middle" class="celebrate__boo" filter="url(#glow)">BOO!</text>
+            <text x="160" y="58" text-anchor="middle" class="celebrate__boo" filter="url(#glow)">BU!</text>
             <path fill="rgba(168,85,255,0.35)" d="M40 75 Q80 55 120 75 T200 75 T280 75 L320 100 H0Z"/>
           </svg>
         </div>
-        <p class="rsvp__tag rsvp__tag--yes">Sealed</p>
-        <h2 class="rsvp__h">You’re in the circle.</h2>
+        <p class="rsvp__tag rsvp__tag--yes">Klart</p>
+        <h2 class="rsvp__h">Vi ses!</h2>
         <p class="rsvp__thanks">
-          Nice one, <span class="guest-name" id="thanks-name">friend</span> — you’re marked <strong>PRESENT</strong> on the other side.
+          Tack <span class="guest-name" id="thanks-name">kompis</span> — du är <strong>anmäld</strong>.
         </p>
       </section>
     </article>

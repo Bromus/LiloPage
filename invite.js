@@ -11,7 +11,7 @@
   }
 
   var name = guestNameFromQuery();
-  var display = name || "friend";
+  var display = name || "kompis";
 
   var greetEl = document.getElementById("guest-name");
   var thanksEl = document.getElementById("thanks-name");

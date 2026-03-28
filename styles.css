@@ -1,0 +1,87 @@
+:root {
+  --bg: #0f1419;
+  --surface: #1a2332;
+  --text: #e8eef5;
+  --muted: #8b9cb3;
+  --accent: #6ec9c0;
+  --accent-dim: #4a9e96;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Nunito", system-ui, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse 120% 80% at 50% -20%, #1e3a4a 0%, transparent 55%),
+    var(--bg);
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0 0 2rem;
+  color: var(--muted);
+}
+
+.lead code {
+  font-size: 0.95em;
+  padding: 0.15em 0.45em;
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--accent);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--bg);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(110, 201, 192, 0.25);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}

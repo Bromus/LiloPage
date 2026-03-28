@@ -3,31 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1a3d2e">
+  <meta name="theme-color" content="#142920">
   <title>Lilo’s 11th birthday — jungle party</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="jungle-scene" aria-hidden="true">
-    <svg class="vine vine--left" viewBox="0 0 80 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M40 0 C55 80 25 120 40 200 C55 280 30 340 45 400" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-      <ellipse cx="28" cy="120" rx="18" ry="10" fill="currentColor" opacity="0.35" transform="rotate(-25 28 120)"/>
-      <ellipse cx="52" cy="240" rx="20" ry="11" fill="currentColor" opacity="0.35" transform="rotate(15 52 240)"/>
-    </svg>
-    <svg class="vine vine--right" viewBox="0 0 80 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M40 0 C25 90 55 130 38 210 C22 290 48 350 35 400" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-      <ellipse cx="52" cy="100" rx="18" ry="10" fill="currentColor" opacity="0.35" transform="rotate(20 52 100)"/>
-      <ellipse cx="30" cy="260" rx="19" ry="10" fill="currentColor" opacity="0.35" transform="rotate(-18 30 260)"/>
-    </svg>
-    <div class="canopy"></div>
-    <div class="animals" aria-hidden="true">
-      <span class="animal animal--parrot" title="Parrot">🦜</span>
-      <span class="animal animal--monkey" title="Monkey">🐵</span>
-      <span class="animal animal--tiger" title="Tiger">🐯</span>
-      <span class="animal animal--frog" title="Frog">🐸</span>
+    <div class="jungle-scene__bg"></div>
+    <div class="jungle-scene__shade"></div>
+    <div class="wildlife">
+      <figure class="wildlife__frame wildlife__frame--macaw">
+        <img
+          src="https://images.unsplash.com/photo-1552728081-9767a877ceaf?auto=format&fit=crop&w=640&q=80"
+          srcset="https://images.unsplash.com/photo-1552728081-9767a877ceaf?auto=format&fit=crop&w=480&q=80 480w,
+                  https://images.unsplash.com/photo-1552728081-9767a877ceaf?auto=format&fit=crop&w=640&q=80 640w"
+          sizes="(max-width: 600px) 120px, 180px"
+          width="320"
+          height="400"
+          alt=""
+          loading="lazy"
+          decoding="async">
+      </figure>
+      <figure class="wildlife__frame wildlife__frame--monkey">
+        <img
+          src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=640&q=80"
+          srcset="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=480&q=80 480w,
+                  https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=640&q=80 640w"
+          sizes="(max-width: 600px) 120px, 180px"
+          width="320"
+          height="400"
+          alt=""
+          loading="lazy"
+          decoding="async">
+      </figure>
+      <figure class="wildlife__frame wildlife__frame--tiger">
+        <img
+          src="https://images.unsplash.com/photo-1561731216-c3a4b994fd02?auto=format&fit=crop&w=640&q=80"
+          srcset="https://images.unsplash.com/photo-1561731216-c3a4b994fd02?auto=format&fit=crop&w=480&q=80 480w,
+                  https://images.unsplash.com/photo-1561731216-c3a4b994fd02?auto=format&fit=crop&w=640&q=80 640w"
+          sizes="(max-width: 600px) 120px, 180px"
+          width="320"
+          height="400"
+          alt=""
+          loading="lazy"
+          decoding="async">
+      </figure>
+      <figure class="wildlife__frame wildlife__frame--frog">
+        <img
+          src="https://images.unsplash.com/photo-1559251606-c72583351e2e?auto=format&fit=crop&w=640&q=80"
+          srcset="https://images.unsplash.com/photo-1559251606-c72583351e2e?auto=format&fit=crop&w=480&q=80 480w,
+                  https://images.unsplash.com/photo-1559251606-c72583351e2e?auto=format&fit=crop&w=640&q=80 640w"
+          sizes="(max-width: 600px) 120px, 180px"
+          width="320"
+          height="400"
+          alt=""
+          loading="lazy"
+          decoding="async">
+      </figure>
     </div>
   </div>
 
@@ -62,13 +98,24 @@
       </section>
 
       <section class="rsvp rsvp--done" id="rsvp-done" hidden>
-        <div class="celebrate" aria-hidden="true">🌿🎉🌿</div>
+        <div class="celebrate" aria-hidden="true">
+          <img
+            class="celebrate__leaves"
+            src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=720&q=75"
+            alt=""
+            width="360"
+            height="120"
+            loading="lazy"
+            decoding="async">
+        </div>
         <h2 class="rsvp__h">See you in the jungle!</h2>
         <p class="rsvp__thanks">
           Thanks, <span class="guest-name" id="thanks-name">friend</span> — we’ve noted you as <strong>attending</strong>.
         </p>
       </section>
     </article>
+
+    <p class="photo-credit">Photos: <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
   </main>
 
   <script src="invite.js"></script>
